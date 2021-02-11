@@ -1,0 +1,62 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["react-app", "plugin:react/recommended", "prettier/react", "prettier", "airbnb"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser", //"babel-eslint"
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "tsx": true
+    },
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier", "@typescript-eslint"],
+  "rules": {
+    "react/prop-types": "off",
+    "react/jsx-uses-react": "off",
+    "react/jsx-curly-newline": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
+    "no-unused-vars": "warn",
+    "@typescript-eslint/no-unused-vars": "off",
+    "react/state-in-constructor": [2, "never"],
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
+    "implicit-arrow-linebreak": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "no-shadow": "off",
+    "no-confusing-arrow": "off",
+    "no-console": ["warn", { "allow": ["warn", "error", "info"] }],
+    "comma-dangle": "off", //"comma-dangle": ["error", "never"],
+    "function-paren-newline": "off",
+    "object-curly-newline": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "max-len": [
+      "warn",
+      {
+        "code": 110,
+        "tabWidth": 2,
+        "comments": 110,
+        "ignoreComments": false,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
+      }
+    ]
+  }
+}
