@@ -1,0 +1,28 @@
+.header-home-page {
+  height: 65px;
+  background-color: #fff;
+  .header-search {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    display: flex;
+    width: calc(100vw - 30px);
+    height: 65px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    .search-input {
+      input {
+        font-size: 13px;
+      }
+      .ant-input-prefix {
+        margin-right: 6px;
+      }
+      .search-icon {
+        width: 15px;
+        height: 15px;
+        fill: #bdbdbd;
+      }
+    }
+  }
+}

@@ -16,7 +16,9 @@ interface inputProps {
 
 const InputWithMask: FC<inputWithMaskProps> = (props) => (
   <ReactInputMask {...props}>
-    {({ id, icon, placeholder }: inputProps) => <Input size="middle" prefix={icon} placeholder={placeholder} id={id} />}
+    {({ id, icon, placeholder }: inputProps) => (
+      <Input size="middle" prefix={icon} placeholder={placeholder} id={id} />
+    )}
   </ReactInputMask>
 );
 

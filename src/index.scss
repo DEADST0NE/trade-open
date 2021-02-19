@@ -1,9 +1,34 @@
+@import './fonts/index.scss';
+
+html {
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-anchor: none;
+
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    -webkit-appearance: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border: 1px solid #fdfdfd;
+    background-color: #fdfdfd33;
+    border-radius: 5px;
+  }
+}
+
+.ant-layout-content {
+  background-color: #fff;
 }
 
 code {

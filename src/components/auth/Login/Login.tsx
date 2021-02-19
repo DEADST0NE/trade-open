@@ -2,8 +2,6 @@ import { FC } from 'react';
 
 import { Button } from 'antd';
 import LoginForm from './LoginForm';
-
-import loginPagesImg from '../../../images/login-pages.png';
 import logo from '../../../images/logo.svg';
 
 import './Login.scss';
@@ -35,9 +33,6 @@ const Login: FC = () => (
           </div>
           <div className="login-left-footer">© 2021 WebSystems</div>
         </div>
-      </div>
-      <div className="login-right">
-        <img src={loginPagesImg} alt="img" />
       </div>
     </div>
   </div>

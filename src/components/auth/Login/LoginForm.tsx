@@ -58,11 +58,22 @@ const LoginForm: FC = () => {
         validateStatus={error?.password ? 'error' : undefined}
         help={error?.password}
       >
-        <Input.Password size="large" prefix={<LockOutlined className="site-form-item-icon" />} placeholder="Пароль" />
+        <Input.Password
+          size="large"
+          prefix={<LockOutlined className="site-form-item-icon" />}
+          placeholder="Пароль"
+        />
       </Form.Item>
 
       <Form.Item className="submit-content">
-        <Button type="primary" htmlType="submit" block size="large" loading={loading} icon={<LoginOutlined />}>
+        <Button
+          type="primary"
+          htmlType="submit"
+          block
+          size="large"
+          loading={loading}
+          icon={<LoginOutlined />}
+        >
           Войти
         </Button>
       </Form.Item>

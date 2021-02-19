@@ -3,8 +3,8 @@
     display: flex;
     height: 100vh;
     align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(90deg, #ffffff 0%, #ebebee 35%, #e7e3db 40%, #ecd8b4 100%);
+    justify-content: center;
+    background: linear-gradient(180deg, #ecdabb 0%, #ffffff 49%, #ffffff 100%);
   }
   &-left {
     position: relative;
@@ -26,7 +26,7 @@
         text-align: center;
         span {
           padding: 0px 10px;
-          background-color: #f3f3f5;
+          background: linear-gradient(180deg, #fbf7f0 0%, #fbf8f2 49%, #fcf9f4 100%);
           color: #a9a9a9;
           font-size: 13px;
         }
@@ -38,16 +38,17 @@
     }
     &-header {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
-      margin-bottom: 30px;
+      margin-bottom: 55px;
       img {
-        width: 55px;
+        width: 45px;
       }
       span {
         position: relative;
-        left: -5px;
-        font-size: 40px;
+        left: -2px;
+        font-size: 45px;
+        line-height: 0.9 !important;
       }
     }
     &-footer {
@@ -77,17 +78,6 @@
       }
     }
   }
-  &-right {
-    display: flex;
-    width: 60%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    img {
-      width: calc(100vw - 75%);
-      height: calc(100vh - 30%);
-    }
-  }
 }
 
 @media screen and (max-width: 1500px) {
@@ -100,59 +90,12 @@
   }
 }
 
-@media screen and (max-width: 1300px) {
-  .login-wrapper {
-    background: linear-gradient(90deg, #ffffff 0%, #ebebee 40%, #e7e3db 50%, #ecd8b4 100%);
-  }
-  .login-left {
-    width: 50%;
-  }
-  .login-right {
-    width: 50%;
-    img {
-      width: calc(100vw - 100%);
-      height: calc(100vh - 45%);
-    }
-  }
-}
-
 @media screen and (max-width: 1000px) {
-  .login-left-header {
-    img {
-      width: 50px;
-    }
-    span {
-      font-size: 30px;
-    }
-  }
   .login-left {
     width: 100%;
-    .password svg {
-      top: 6px;
-    }
-    .login-left-title span {
-      background: linear-gradient(90deg, #e9e7e5 50%, #e8e4dd 100%);
-    }
-    .navigation-link a {
-      font-size: 11px;
-    }
-    .form-submit-connent button {
-      height: 43px;
-    }
-  }
-  .login-right {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .login-left {
     .login-left-content {
-      width: 65%;
+      width: 75%;
       padding-bottom: 0px;
-    }
-    .login-left-title span {
-      background: linear-gradient(90deg, #eeeef0 30%, #e9e0cf 100%);
     }
     .navigation-link a {
       padding: 5px 5px;

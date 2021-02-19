@@ -1,0 +1,193 @@
+.products {
+  width: 100%;
+  height: calc(100% - 163px);
+  .products-list {
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    -ms-grid-columns: auto;
+    grid-gap: 2vw;
+    grid-template-columns: 1fr;
+    .product-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      height: 100px;
+      padding: 0 !important;
+      border: 1px solid #efefef;
+      border-radius: 5px;
+      &:last-child {
+        margin-bottom: 20px;
+      }
+      .product-img {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 40%;
+        align-items: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        -ms-flex-align: center;
+        -ms-flex-pack: center;
+        img {
+          max-width: 100%;
+          max-height: 100px;
+          padding: 10px;
+        }
+      }
+      .product-info {
+        width: 60%;
+        padding: 10px;
+        .product-name {
+          height: 53px;
+          color: #141414;
+          font-family: GT EESTI PRO TEXT;
+          font-size: 11.5px;
+          font-weight: 400;
+          line-height: 1.3;
+        }
+        .product-price {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          width: 100%;
+          .count {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 50%;
+            align-items: center;
+            padding-right: 5px;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 600;
+          }
+          .add-btn {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 50%;
+            align-items: center;
+            justify-content: flex-end;
+            -webkit-box-align: center;
+            -webkit-box-pack: end;
+            -ms-flex-align: center;
+            -ms-flex-pack: end;
+          }
+          button {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            height: 23px;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            border-color: #3983f1;
+            background-color: #3983f1;
+            border-radius: 3px;
+            -webkit-box-align: center;
+            -webkit-box-pack: center;
+            color: #fff;
+            -ms-flex-align: center;
+            -ms-flex-pack: center;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//iphone SE
+@media only screen and (min-width: 0px) {
+  .products {
+    .products-list {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+//iphone X
+@media only screen and (min-width: 375px) {
+  .products {
+    .products-list {
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      .product-item {
+        display: block;
+        height: auto;
+        .product-img {
+          width: 100%;
+          height: 150px;
+          img {
+            max-height: 150px;
+          }
+        }
+        .product-info {
+          width: 100%;
+          .product-name {
+            font-size: 13px;
+          }
+          .product-price {
+            .count {
+              font-size: 18px;
+            }
+          }
+          .add-btn {
+            button {
+              height: 25px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//iphone XXXS ))
+@media only screen and (min-width: 600px) {
+  .products {
+    .products-list {
+      -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      .product-item {
+        display: block;
+        height: auto;
+        .product-img {
+          width: 100%;
+          height: 150px;
+          img {
+            max-height: 150px;
+          }
+        }
+        .product-info {
+          width: 100%;
+          .product-name {
+            font-size: 14px;
+          }
+          .product-price {
+            .count {
+              font-size: 19px;
+            }
+          }
+          .add-btn {
+            button {
+              height: 28px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
